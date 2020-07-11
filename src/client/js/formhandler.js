@@ -10,7 +10,7 @@ const postData = async(url, data) => {
 
 
     });
-    return response.body;
+    return response;
 
 }
 
