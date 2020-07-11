@@ -1,13 +1,17 @@
-import { postData } from './formhandler'
 const updateUI = async() => {
-    const p = document.getElementById('DataPosted');
     const input = document.getElementById('textplace');
-    console.log('heloooo');
-    const data = await postData('/dataPosted', { text: input.value });
-    console.log('heree 22');
+    const data = await Client.postData('/dataPosted', { text: input.value });
     const myinfo = await data.json();
     console.log(myinfo);
-    p.innerHTML = myinfo;
+    document.getElementById('polarity').textContent = `polarity: ${myinfo.polarity}`;
+    document.getElementById('subjectivity').textContent = `subjectivity: ${myinfo.subjectivity}`;
+    document.getElementById('text').textContent = `text: ${myinfo.text}`;
+    document.getElementById('polarity_confidence').textContent = `polarity confidence: ${myinfo.polarity_confidence}`;
+    document.getElementById('subjectivity_confidence').textContent = `subjectivity confidence: ${myinfo.subjectivity_confidence}`;
+
+
+
+
 
 
 }
