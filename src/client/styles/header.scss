@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+$font_size: 0.7em;
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(24, 38, 37, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    header {
+        color: #FDF7FA;
+        margin: auto;
+        width: 50%;
+        font-size: 2.5em;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        font-family: 'Merienda One', cursive;
+    }
+}

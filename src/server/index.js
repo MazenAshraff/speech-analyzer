@@ -22,6 +22,7 @@ var textapi = new aylien({
     application_key: `${process.env.API_KEY}`
 });
 app.post('/dataposted', (req, res) => {
+    console.log(`${process.env.API_KEY}`)
     let theText = req.body['text'];
     console.log(theText);
     textapi.sentiment({

@@ -3,11 +3,12 @@ const updateUI = async() => {
     const data = await Client.postData('/dataPosted', { text: input.value });
     const myinfo = await data.json();
     console.log(myinfo);
-    document.getElementById('polarity').textContent = `polarity: ${myinfo.polarity}`;
-    document.getElementById('subjectivity').textContent = `subjectivity: ${myinfo.subjectivity}`;
-    document.getElementById('text').textContent = `text: ${myinfo.text}`;
-    document.getElementById('polarity_confidence').textContent = `polarity confidence: ${myinfo.polarity_confidence}`;
-    document.getElementById('subjectivity_confidence').textContent = `subjectivity confidence: ${myinfo.subjectivity_confidence}`;
+    document.getElementById('DataPosted').setAttribute('style', 'border: 2px solid white; border-radius:2%')
+    document.getElementById('polarity').textContent = `Polarity: ${myinfo.polarity}`;
+    document.getElementById('subjectivity').textContent = `Subjectivity: ${myinfo.subjectivity}`;
+    document.getElementById('text').textContent = `Text: ${myinfo.text}`;
+    document.getElementById('polarity_confidence').textContent = `Polarity Confidence: ${myinfo.polarity_confidence}`;
+    document.getElementById('subjectivity_confidence').textContent = `Subjectivity Confidence: ${myinfo.subjectivity_confidence}`;
 
 
 
