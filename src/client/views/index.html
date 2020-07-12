@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <title>Speech Analyzer</title>
 </head>
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js');
-        });
-    }
-</script>
 
 <body>
+
+
     <header>
         <h1>Speech Analyzer</h1>
     </header>
@@ -26,4 +21,11 @@
         <p id="text"></p>
     </div>
     <footer id="footer">Stay Home and stay safe</footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
 </body>
