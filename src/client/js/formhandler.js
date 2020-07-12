@@ -1,3 +1,4 @@
+global.fetch = require('node-fetch');
 const postData = async(url, data) => {
     console.log(data);
     const response = await fetch(url, {
@@ -10,6 +11,7 @@ const postData = async(url, data) => {
 
 
     });
+    console.log(response);
     return response;
 
 }
