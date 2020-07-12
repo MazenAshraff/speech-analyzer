@@ -7,8 +7,8 @@ const updateUI = async() => {
     document.getElementById('polarity').textContent = `Polarity: ${myinfo.polarity}`;
     document.getElementById('subjectivity').textContent = `Subjectivity: ${myinfo.subjectivity}`;
     document.getElementById('text').textContent = `Text: ${myinfo.text}`;
-    document.getElementById('polarity_confidence').textContent = `Polarity Confidence: ${myinfo.polarity_confidence}`;
-    document.getElementById('subjectivity_confidence').textContent = `Subjectivity Confidence: ${myinfo.subjectivity_confidence}`;
+    // document.getElementById('polarity_confidence').textContent = `Polarity Confidence: ${myinfo.polarity_confidence}`;
+    // document.getElementById('subjectivity_confidence').textContent = `Subjectivity Confidence: ${myinfo.subjectivity_confidence}`;
 
 
 
